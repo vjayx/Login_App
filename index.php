@@ -39,8 +39,54 @@ include('includes/registration.php');
         ?>
 
 
+        <?php
 
-    <div class="row">
+        $Message = 'Please enter valid characters :-)';
+
+
+        if (isset($_GET ['characters'])) {
+
+
+            echo '<div class="alert alert-danger text-center" role="alert">'. $Message .'</div>';
+        }
+
+
+        ?>
+
+
+
+        <?php
+
+        $Message = 'Please enter valid email :-)';
+
+
+        if (isset($_GET ['validemail'])) {
+
+
+            echo '<div class="alert alert-danger text-center" role="alert">'. $Message .'</div>';
+        }
+
+
+        ?>
+
+
+        <?php
+
+        $Message = 'Sorry this email is already taken :-/';
+
+
+        if (isset($_GET ['emailregis'])) {
+
+
+            echo '<div class="alert alert-danger text-center" role="alert">'. $Message .'</div>';
+        }
+
+
+        ?>
+
+
+
+        <div class="row">
 
         <div class="col"></div>
         <div class="col-sm-12 md-8">
