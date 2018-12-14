@@ -16,15 +16,16 @@ if (isset($_POST ['submit'])) {
 echo $FirstName . " " . $SecondName . " " . $Email . " " . $Password . " ";
 
 
-  /*  if ( empty($FirstName ) || empty($SecondName) || empty($Email) || empty($Password))
+   if ( empty($FirstName ) || empty($SecondName) || empty($Email) || empty($Password))
 
     {
 
+        header("location: /index.php?Empty");
+        exit();
 
 
 
-
-    }*/
+    }
 
 
 }

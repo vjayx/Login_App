@@ -24,6 +24,21 @@ include('includes/registration.php');
     <div class="container signing-container">
 
 
+        <?php
+
+        $Message = 'Please fulfill required fields :-) ';
+
+
+        if (isset($_GET ['Empty'])) {
+
+
+            echo '<div class="alert alert-danger text-center" role="alert">'. $Message .'</div>';
+        }
+
+
+        ?>
+
+
 
     <div class="row">
 
@@ -43,10 +58,11 @@ include('includes/registration.php');
 
       <!-- <div class="alert alert-danger text-center" role="alert"> </div> -->
 
-      <!--PHP ALERT PLEASE FILL REQUIRED BLANK FORMS -->
 
 
-      
+
+
+
 
 
 
